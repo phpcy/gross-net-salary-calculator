@@ -36,8 +36,8 @@
     },
     "scripts": {
         "test": "phpunit",
-        "check-style": "phpcs src tests",
-        "fix-style": "phpcbf src tests"
+        "phpcs": "php vendor/bin/phpcs src tests",
+        "phpcbf": "php vendor/bin/phpcbf src tests"
     },
     "extra": {
         "branch-alias": {
