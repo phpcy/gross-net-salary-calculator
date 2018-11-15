@@ -32,13 +32,22 @@ final class Calculator
         }
 
         if ($annualGrossSalary <= 36300) {
-            return ((28000 - 19500) * 0.20) + (($annualGrossSalary - 28000) * 0.25);
+            return
+                ((28000 - 19500) * 0.20) +
+                (($annualGrossSalary - 28000) * 0.25);
         }
 
         if ($annualGrossSalary <= 60000) {
-            return ((28000 - 19500) * 0.20) + ((36300 - 28000) * 0.25) + (($annualGrossSalary - 36300) * 0.30);
+            return
+                ((28000 - 19500) * 0.20) +
+                ((36300 - 28000) * 0.25) +
+                (($annualGrossSalary - 36300) * 0.30);
         }
 
-        return ((28000 - 19500) * 0.20) + ((36300 - 28000) * 0.25) + ((60000 - 36300) * 0.30) + (($annualGrossSalary - 60000) * 0.35);
+        return
+            ((28000 - 19500) * 0.20) +
+            ((36300 - 28000) * 0.25) +
+            ((60000 - 36300) * 0.30) +
+            (($annualGrossSalary - 60000) * 0.35);
     }
 }
